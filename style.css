@@ -1,0 +1,470 @@
+/* POPPINS FONT FAMILY */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+:root {
+  --blue: #4530E6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: var(--blue);
+    width: 100%;
+    height: 63vh;
+    padding-top: 2rem;
+    padding-left: 3rem;
+}
+
+nav {
+  order: 2;
+  text-align: end;
+}
+
+.nav-item {
+  color: #fff;
+  margin-right: 2.5rem;
+  font-family: 'Poppins',sans-serif;
+  cursor: pointer;
+}
+
+.nav-item-active {
+  font-family: 'Poppins',sans-serif;
+  margin-right: 2rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.2rem;
+  background-color: #fff;
+  font-weight: 900;
+  color: var(--blue);
+  cursor: pointer;
+}
+
+.logo-container {
+  order: 1;
+}
+
+.header-text {
+  margin-top: 4rem;
+  order: 3;
+  color: #fff;
+  font-family: 'Poppins',sans-serif;
+}
+
+.header-text h2 {
+  font-size: 2.4rem;
+  letter-spacing: 0.2rem;
+  line-height: 3.4rem;
+  font-weight: 400;
+}
+
+.header-text p {
+  font-size: 1rem;
+  line-height: 2.4rem;
+  font-weight: 200;
+}
+
+.header-image-container {
+  order: 4;
+  text-align: end;
+}
+
+.companies {
+  padding: 1.5rem 3rem;
+  background-color: #EFE8FF;
+}
+
+.company-items {
+  color: #000;
+  font-family: 'Righteous',sans-serif;
+  font-size: 1.4rem;
+  margin-right: 2.5rem;
+  text-decoration: none;
+}
+
+/* End Of Header *******************************************************************************************/
+
+/* Start of Main Section ***********************************************************************************/
+.api {
+    padding: 3rem 3rem;
+    background-color: #EFE8FF;
+}
+
+.api-heading {
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  padding: 2rem 1rem;
+  min-width: 15%;
+  min-height: 30vh;
+}
+
+.card-active {
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+
+.card-body {
+  font-size: 0.8rem;
+}
+
+.fa-solid {
+  padding: 0.6rem 0.8rem;
+  background-color: var(--blue);
+  border-radius: 50%;
+  color: #fff;
+}
+
+
+.blog-heading {
+  padding-top: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background-color: #EFE8FF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blog-heading a {
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.blog-cards {
+  padding-top: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background-color: #EFE8FF;
+  display: flex;
+  gap: 2rem;
+}
+
+.blog-card {
+  flex: 0.5;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  background-color: #fff;
+  border-radius: 4rem 0.8rem 0.8rem 0.8rem;
+}
+
+.blog-image {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 2;
+}
+
+.blog-content {
+  width: 100%;
+  grid-column: 2 / span 2;
+  padding: 1.5rem 0 1.5rem 3rem;
+}
+
+.blog-content h6 {
+  color: var(--blue);
+  font-size: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.blog-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.blog-bottom {
+  position: relative;
+}
+
+.blog-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.blog-bottom img {
+  width: 30%;
+  position: absolute;
+  right: 50%;
+  bottom: -100%;
+}
+
+.blog-author {
+  position: relative;
+}
+
+.blog-author b {
+  position: absolute;
+  left: -40%;
+  top: -100%;
+}
+
+.faq-section {
+  background-color: #EFE8FF;
+  display: flex;
+  padding: 3rem 0 0 3rem;
+  justify-content: space-between;
+}
+
+.faq-content h2:first-child {
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
+}
+
+.faq-content h4:nth-child(2) {
+  font-size: 0.8rem;
+  font-weight: 100;
+  margin-bottom: 2rem;
+}
+
+.faq-content h4:nth-child(3) {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.faq-content button:nth-child(4) {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--blue);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.faq-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.download-section {
+  padding: 5rem 3rem;
+  display: flex;
+  width: 100%;
+  height: 20vh;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.download-content h1  {
+  font-size: 1.8rem;
+}
+
+.download-content {
+  flex: 0.5;
+}
+
+.download-email {
+  flex: 0.5;
+  text-align: end;
+}
+
+.download-content h1 > span {
+  font-weight: 200;
+}
+
+.download-email > form > input {
+  width: 78%;
+  padding: 1rem 1.2rem;
+  border: none;
+  border-radius: 2rem;
+  background: #EFE8FF;
+  font-size: 0.8rem;
+}
+
+.download-email > form > button {
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  background: var(--blue);
+  font-size: 0.8rem;
+  color: #fff;
+  position: absolute;
+  right: 3.2rem;
+  bottom: 3.6rem;
+  cursor: pointer;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--blue);
+  width: 100%;
+  padding: 5rem 3rem;
+}
+
+.list {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-logo {
+  margin-bottom: 0.8rem;
+  width: 25%;
+}
+
+.footer-left .list-items {
+  list-style: none;
+  color: #fff;
+  font-size: 1rem;
+  position: relative;
+  padding-right: 1rem;
+  text-align: center;
+}
+
+.footer-left .list-items:nth-child(2)::after {
+  content: '';
+  position: absolute;
+  bottom: 0.3rem;
+  right: 0;
+  border-right: 2px solid #fff;
+  height: 50%;
+}
+
+.footer-left .list-items:nth-child(3)::after {
+  content: '';
+  position: absolute;
+  bottom: 0.3rem;
+  right: 0;
+  border-right: 2px solid #fff;
+  height: 50%;
+}
+
+.footer-left .list-items:nth-child(4)::after {
+  content: '';
+  position: absolute;
+  bottom: 0.3rem;
+  right: 0;
+  border-right: 2px solid #fff;
+  height: 50%;
+}
+
+.logos-list {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-right .list-items {
+  list-style: none;
+  color: #fff;
+  font-size: 1rem;
+  position: relative;
+  padding-right: 1rem;
+  text-align: center;
+}
+
+.footer-right .list-items::after {
+  content: '';
+  position: absolute;
+  bottom: 0.3rem;
+  right: 0;
+  border-right: 2px solid #fff;
+  height: 50%;
+}
+
+.footer-right {
+    text-align: end;
+}
+
+.footer-right img {
+  width: 15%;
+  margin-bottom: 1.2rem;
+  margin-left: 1rem;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+  header {
+    height: 56vh;
+  }
+  .nav-item {
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
+
+  .nav-item-active {
+    font-size: 1rem;
+  }
+
+  .logo {
+    width: 20%;
+  }
+
+  .header-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .header-image {
+    width: 100%;
+  }
+
+  .companies {
+    padding: 1rem 3rem;
+    background-color: #EFE8FF;
+  }
+
+  .company-items {
+    padding-top: 0.1rem;
+    font-size: 1.1rem;
+  }
+
+  .api-heading {
+    font-size: 1.5rem;
+  }
+
+  .card-head-active {
+    font-size: 1.2rem;
+  }
+  
+  .card-body {
+    font-size: 0.8rem;
+  }
+
+  .blog-heading {
+    font-size: 0.8rem;
+  }
+
+  .blog-content h3 {
+    font-size: 0.8rem;
+  }
+
+  .blog-content small {
+    font-size: 0.6rem;
+  }
+
+  .blog-content {
+    margin-bottom: 2rem;
+  }
+
+  .blog-bottom img {
+    bottom: -1rem;
+  }
+
+  .blog-author b {
+    top: -1.6rem;
+    font-size: 0.6rem;
+  }
+
+  .faq-content h2:nth-child(1) {
+    font-size: 1.5rem;
+  }
+
+  .faq-content h4:nth-child(3) {
+    font-size: 0.8rem;
+  }
+
+  .faq-content button:nth-child(4) {
+    font-size: 0.8rem;
+  }
+}
